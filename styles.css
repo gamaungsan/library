@@ -1,0 +1,235 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    --white: #fff8f0;
+    --blue: #9dd9d2;
+    --violet: #392f5a;
+}
+
+body, html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue);
+}
+
+header{
+    font-size: 3rem;
+    width: 100%;
+    background-color: var(--violet);
+    display: flex;
+    justify-content: center;
+    padding: 1.2rem;
+    color: yellow;
+    font-weight: 900;
+}
+
+
+.library{
+    flex: 1;
+    grid-template-rows: 4fr 1fr;
+    display: grid;
+    width: 100%;
+    justify-items: center;
+}
+
+.book-display{
+    width: 70%;
+    margin: 40px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    justify-content: center;
+}
+
+.card {
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: white;
+    font-size: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card p:first-child{
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.card p{
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.card button{
+    align-self: bottom;
+    border: none;
+    background-color: transparent;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.card button:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.card img, .card button {
+    height: 30px;
+    width: 100%;
+}
+
+.card:hover{
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(190, 185, 185));
+    cursor: pointer;
+}
+
+
+footer{
+    margin-top: auto;
+}
+
+dialog{
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+}
+
+dialog::backdrop {
+    background-image: linear-gradient(grey, grey);
+    opacity: 0.6;
+}
+
+.dialog-container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    overflow: hidden;
+    gap: 20px;
+}
+
+.dialog-container h2{
+    padding-left: 10px;
+}
+#close{
+    height: 1.5rem;
+    border: none;
+    margin: 0;
+    padding: 0;
+    align-self: end;
+    justify-self: end;
+    background-color: transparent;
+}
+
+#close:hover{
+    cursor: pointer;
+    background-color: transparent;
+}
+
+#close img{
+    height: 40px;
+}
+
+form{
+    padding-left: 10px;
+    width: 100%;
+    grid-column: 1 / 3;
+    display: grid;
+}
+
+form button{
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    margin-top: 4rem;
+    align-self: end;
+    background-color: transparent;
+}
+
+form button > img{
+    height: 40px;
+    width: 100%;
+}
+
+.button-hovered{
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(190, 185, 185));
+}
+
+.close-hovered{
+    background-image: linear-gradient(rgb(190, 185, 185), rgb(255, 255, 255));
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-size: 1.5rem;
+}
+
+input[type=text], input[type=number] {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #000000;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    height: 30px;
+    font-size: 1.5rem;
+}
+
+input[type=text]:focus-visible, input[type=number]:focus-visible{
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+.fread{
+    justify-self: center;
+    gap: 10px;
+}
+
+input[type=checkbox]{
+    height: 25px;
+}
+
+
+.buttons img {
+    height: 75px;
+}
+
+
+
+
+
+
+

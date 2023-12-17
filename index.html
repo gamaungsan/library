@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Libary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='styles.css'/>
+</head>
+<body>
+    <div class="container">
+        <dialog>
+            <div class="dialog-container">
+                    <h2>Book Info</h2>
+                    <button id="close">
+                        <img src="close-box-outline.svg" alt="close button">
+                    </button>
+                
+                <form method="dialog">
+                    <div class="ftitle">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" class="textinput" name="title">
+                    </div>
+                    <div class="fauthor">
+                        <label for="author">Author:</label>
+                        <input type="text" id="author" class="textinput" name="author">
+                    </div>
+                
+                    <div class="fpages">
+                        <label for="pages">No. of Pages:</label>
+                        <input type="number" id="pages" class="textinput" name="pages">
+                    </div>
+                
+                    <div class="fcurrent">
+                        <label for="current">Current Page:</label>
+                        <input type="number" id="current" class="textinput" name="current">
+                    </div>
+                    <div class="fread">
+                        <label for="read">Read</label>
+                        <input type="checkbox" id="read">
+                    </div>
+                    <button id="add-card"><img src="playlist-plus.svg" alt=""></button>
+                
+                </form>
+            </div>
+        </dialog>
+
+        <header>Library</header>
+        <div class="library">
+            <div class="book-display">
+                
+            </div>
+            <div class="buttons">
+                <button id="add"><img src="plus-thick.svg" alt=""></button>
+                <button id="clear"><img src="delete-empty.svg" alt=""></button>
+            </div>
+        </div>
+        <footer>Library Project by Gam for Odin Project</footer>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
